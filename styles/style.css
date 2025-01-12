@@ -1,31 +1,77 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.menu{
-    width: 100%;
-    height: 60px;
-    background-color: #68b440;
+.menu {
+  width: 100%;
+  height: 60%;
+  background-color: #68b440;
+  display: flex;
+  align-items: center;
 }
-.menu-line{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.menu-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
 }
-.menu-content a{
-    text-decoration: none;
-    padding: 15px;
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    text-shadow: 3px;
-    font-family: "Ubuntu", sans-serif;
+.menu-content a {
+  text-decoration: none;
+  padding: 15px;
+  color: black;
+  border-radius: 5px;
+  text-shadow: 3px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5vh;
 }
-.menu-content a:hover{
-    background-color: rgb(241, 241, 241);    
+.menu-content a:hover {
+  background-color: #f1f1f1;
+  color: #68b440;
+  transition: 0.5s;
 }
-.menu-content{
-    height: 60px;
-    align-content: center;
+.menu-content {
+  height: 60px;
+  align-content: center;
+}
+.menu-logo {
+  width: 80px;
+  height: 60px;
+  background-color: #68b440;
+  margin-left: 10px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  background-color: #f8f8f8;
+}
+.main-title {
+  font-size: 1.2em;
+  text-align: center;
+}
+.mint-style {
+  background-color: #68b440;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+.mint-offer {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+.preview-img {
+  width: 50em;
+}
+.preview-img img {
+  width: 100%;
+  border-radius: 5px;
+  justify-self: center;
 }
