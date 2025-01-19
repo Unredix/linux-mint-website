@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1d1d1d;
 }
 .menu {
   min-width: 100%;
@@ -9,6 +10,7 @@ body {
   background-color: #68b440;
   display: flex;
   align-items: center;
+  position: fixed;
 }
 .menu-line {
   display: flex;
@@ -44,13 +46,14 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
-  background-color: #f8f8f8;
+  background-color: #1d1d1d;
+  color: white;
 }
 .main-title {
   font-size: 1.2em;
   text-align: center;
   margin: 0 auto;
+  margin-top: 100px;
   line-height: 50px;
   max-width: fit-content;
   overflow: hidden;
@@ -67,8 +70,8 @@ body {
   margin: 10px;
 }
 .mint-offer {
-  background-color: #000000;
-  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  color: black;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -91,12 +94,14 @@ body {
 .advantages-title {
   font-size: 1.7em;
   text-align: center;
+  margin-top: 65px;
 }
 .advantages-item {
   display: flex;
   flex-direction: row;
   background-color: #68b440;
   width: 100%;
+  padding: 10px;
 }
 .advantages-item img {
   width: 100px;
@@ -110,11 +115,52 @@ body {
   text-align: center;
   height: 100%;
   font-size: 1.3em;
+  color: #1d1d1d;
 }
-
+.download-container {
+  margin-top: 20px;
+  width: 50%;
+  background-color: #68b440;
+  transform: translateX(50%);
+  border-radius: 5px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+.download-title {
+  font-size: 1.7em;
+  text-align: center;
+}
+.download-content {
+  margin-top: 20px;
+}
+.download-item {
+  text-align: center;
+  justify-self: center;
+  font-size: 1.7em;
+}
+.download-item table,
+th,
+td {
+  border: 3px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+  padding: 30px 60px;
+}
+.download-item a {
+  color: #1d1d1d;
+}
+@media screen and (max-width: 1340px) {
+  .download-item table,
+  th,
+  td {
+    padding: 10px 40px;
+  }
+  .download-title {
+    font-size: 1.3em;
+  }
+}
 @media screen and (max-width: 1100px) {
   .main-title {
-    font-size: 0.7em;
+    font-size: 0.5em;
   }
   .advantages-item img {
     width: 80px;
@@ -126,12 +172,21 @@ body {
   .preview-img {
     width: 600px;
   }
+  .download-item table,
+  th,
+  td {
+    padding: 5px 15px;
+  }
 }
 @media screen and (max-width: 800px) {
   .main-title {
     font-size: 0.5em;
   }
-
+  .download-item table,
+  th,
+  td {
+    padding: 3.5px 10px;
+  }
   .advantages-title {
     font-size: 1em;
   }
@@ -142,7 +197,40 @@ body {
     width: 97vw;
   }
 }
-
+@media screen and (max-width: 668px) {
+  .download-item table,
+  th,
+  td {
+    padding: 2px 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-title {
+    font-size: 0.3em;
+  }
+  .advantages-item img {
+    width: 60px;
+    height: 60px;
+  }
+  .advantages-item-desc p {
+    font-size: 0.7em;
+  }
+  .preview-img {
+    width: 97vw;
+  }
+  .download-container {
+    width: 80%;
+    transform: translateX(10%);
+  }
+  .download-item table,
+  th,
+  td {
+    padding: 10px 20px;
+  }
+  .download-item {
+    font-size: 1em;
+  }
+}
 @keyframes typing {
   from {
     width: 0;
