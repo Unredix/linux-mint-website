@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1d1d1d;
+  color: white;
+}
+.menu {
+  min-width: 100%;
+  height: 60px;
+  background-color: #68b440;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+.menu-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+.menu-content a {
+  text-decoration: none;
+  padding: 15px;
+  color: black;
+  border-radius: 5px;
+  text-shadow: 3px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5vh;
+}
+.menu-content a:hover {
+  background-color: #f1f1f1;
+  color: #68b440;
+  transition: 0.5s;
+}
+.menu-content {
+  height: 60px;
+  align-content: center;
+}
+.menu-logo {
+  width: 80px;
+  height: 60px;
+  background-color: #68b440;
+  margin-left: 10px;
+}
+.mint-style {
+  background-color: #68b440;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+.mint-offer {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #68b440;
+  color: white;
+  width: 60%;
+  justify-self: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  animation: fade-in 1.4s forwards;
+  opacity: 0;
+  height: 200vh;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 1.5em;
+}
+.small-desc {
+  font-size: 1.5em;
+  margin: 20px;
+}
+.small-title {
+  font-size: 1.6em;
+  margin: 20px;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+.progress {
+  position: fixed;
+  background: linear-gradient(to right, white 90%, rgba(255, 255, 255, 0));
+  min-width: 100%;
+  height: 1em;
+  transform-origin: 0 50%;
+  bottom: 0;
+  left: 0;
+  animation-timeline: scroll(root);
+  animation-name: scale-progress;
+  animation-duration: auto;
+  animation-timing-function: linear;
+}
+
+.highlight {
+  background-color: black;
+  border-radius: 5px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

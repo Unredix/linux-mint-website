@@ -50,6 +50,7 @@ body {
   transform: translateX(50%);
   border-radius: 5px;
   padding-bottom: 50px;
+  padding-top: 10px;
   margin-bottom: 20px;
 }
 .download-title {

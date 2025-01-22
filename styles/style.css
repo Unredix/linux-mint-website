@@ -11,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   position: fixed;
+  z-index: 100;
 }
 .menu-line {
   display: flex;
@@ -78,13 +79,29 @@ body {
   margin: 10px;
 }
 .preview-img {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .preview-img img {
   width: 100%;
+  max-width: 800px;
   border-radius: 5px;
+}
+.next-img {
+}
+.prev-img {
+}
+.next-img img,
+.prev-img img {
+  width: 500px;
+  border-radius: 5px;
+}
+.main-img {
+  position: relative;
+  width: 800px;
 }
 .advantages {
   display: flex;
