@@ -13,6 +13,7 @@ body {
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 .menu-line {
   display: flex;
@@ -74,6 +75,7 @@ body {
   animation: fade-in 1.4s forwards;
   opacity: 0;
   height: 200vh;
+  margin-top: 60px;
 }
 
 .main-title {
@@ -107,6 +109,47 @@ body {
 .highlight {
   background-color: black;
   border-radius: 5px;
+}
+
+.back-button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+.download-button {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.back-button:hover {
+  background-color: #383838;
+  color: white;
+  transition: 0.2s;
+}
+
+.download-button:hover {
+  background-color: #cacaca;
+  color: black;
+  transition: 0.2s;
+  border: 1px solid #cacaca;
+}
+
+.back-button,
+.download-button {
+  cursor: pointer;
+}
+
+.action-buttons {
+  justify-content: center;
+  display: flex;
+  width: 100%;
 }
 
 @keyframes fade-in {
